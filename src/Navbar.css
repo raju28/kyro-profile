@@ -1,0 +1,118 @@
+nav {
+  position: relative;
+}
+
+.hamburger-menu {
+  position: absolute;
+  width: 32px;
+  height: 48px;
+  top: 0;
+  right: 0px;
+  transition-duration: 0.5s;
+}
+
+.hamburger-menu .icon-left {
+  transition-duration: 0.5s;
+  position: absolute;
+  height: 6px;
+  width: 15px;
+  top: 30px;
+  background-color: #212121;
+  left: 0px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.hamburger-menu .icon-left:before {
+  transition-duration: 0.5s;
+  position: absolute;
+  width: 15px;
+  height: 6px;
+  background-color: #212121;
+  content: "";
+  top: -10px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.hamburger-menu .icon-left:after {
+  transition-duration: 0.5s;
+  position: absolute;
+  width: 15px;
+  height: 6px;
+  background-color: #212121;
+  content: "";
+  top: 10px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.hamburger-menu .icon-left:hover {
+  cursor: pointer;
+}
+
+.hamburger-menu .icon-right {
+  transition-duration: 0.5s;
+  position: absolute;
+  height: 6px;
+  width: 15px;
+  top: 30px;
+  background-color: #212121;
+  left: 15px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.hamburger-menu .icon-right:before {
+  transition-duration: 0.5s;
+  position: absolute;
+  width: 15px;
+  height: 6px;
+  background-color: #212121;
+  content: "";
+  top: -10px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.hamburger-menu .icon-right:after {
+  transition-duration: 0.5s;
+  position: absolute;
+  width: 15px;
+  height: 6px;
+  background-color: #212121;
+  content: "";
+  top: 10px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.hamburger-menu.btn-active .icon-left {
+  transition-duration: 0.5s;
+  background: transparent;
+}
+
+.hamburger-menu.btn-active .icon-left:before {
+  transform: rotateZ(45deg) scaleX(1.4) translate(3px, 0px);
+}
+
+.hamburger-menu.btn-active .icon-left:after {
+  transform: rotateZ(-45deg) scaleX(1.4) translate(4px, -3px);
+}
+
+.hamburger-menu.btn-active .icon-right {
+  transition-duration: 0.5s;
+  background: transparent;
+}
+
+.hamburger-menu.btn-active .icon-right:before {
+  transform: rotateZ(-45deg) scaleX(1.4) translate(-2px, 1px);
+}
+
+.hamburger-menu.btn-active .icon-right:after {
+  transform: rotateZ(45deg) scaleX(1.4) translate(-4px, -3px);
+}
+
+.hamburger-menu:hover {
+  cursor: pointer;
+}

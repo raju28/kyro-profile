@@ -1,0 +1,93 @@
+.menu-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  height: calc(100vh - 140px);
+}
+
+.menu-list li {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.menu-list li:hover {
+  background-color: #f0f0f0;
+}
+
+.menu-icon {
+  margin-right: 0.5rem;
+}
+
+.menu-list li a {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  height: 50px;
+  padding: 0 20px;
+  color: #7d84ab;
+  text-decoration: none;
+}
+
+.menu-icon {
+  font-size: 1.2rem;
+  width: 35px;
+  min-width: 35px;
+  height: 35px;
+  line-height: 2.2;
+  text-align: center;
+  display: inline-block;
+  margin-right: 3px;
+  vertical-align: middle;
+}
+
+.menu-icon svg {
+  display: inline-block;
+}
+
+.menu-name {
+  font-size: 0.9em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex-grow: 1;
+  transition: color 0.3s;
+}
+
+.menu-list li a:hover .menu-icon svg {
+  animation: swing ease-in-out 0.5s 1 alternate;
+}
+
+.app-logout {
+  margin-top: auto;
+  padding: 0 40px;
+  cursor: pointer;
+}
+
+@keyframes swing {
+  0%,
+  30%,
+  50%,
+  70%,
+  100% {
+    transform: rotate(0deg);
+  }
+
+  10% {
+    transform: rotate(10deg);
+  }
+
+  40% {
+    transform: rotate(-10deg);
+  }
+
+  60% {
+    transform: rotate(5deg);
+  }
+
+  80% {
+    transform: rotate(-5deg);
+  }
+}
